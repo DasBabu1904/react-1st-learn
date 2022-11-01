@@ -11,17 +11,19 @@ const styleObj = {
 function App() {
   return (
     <div className="App">
-      <Person></Person>
-      <Person></Person>
-      <Person></Person>
+      <Person name="Rubel" nayka="mousumi"></Person>
+      <Person name="bappa" nayka="purnima"></Person>
+      <Person name="kuber" nayka="kopila"></Person>
     </div>
   );
 }
 
-function Person() {
+function Person(props) {
+  console.log(props);
   return (
-    <div className="person"><h1>Sourav Das</h1>
-      <p>I'm a student </p></div>
+    <div className="person">
+      <h1>{props.name} Das</h1>
+      <p>his nayka is {props.nayka}</p></div>
   )
 }
 
