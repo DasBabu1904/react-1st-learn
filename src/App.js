@@ -9,11 +9,19 @@ const styleObj = {
   borderRadius: "10px"
 }
 function App() {
+  const nayoks = ["Sourav", "Nabil", "Uday", "Shovon"];
+  const naykas = ["Puspita", "Nai Nai", "Tarunnya", "Janina"];
   return (
     <div className="App">
-      <Person name="Rubel" nayka="mousumi"></Person>
-      <Person name="bappa" nayka="purnima"></Person>
-      <Person name="kuber" nayka="kopila"></Person>
+      {
+        nayoks.map(nayok => <li>{nayok}</li>)
+      }
+      {
+        nayoks.map(nayok => <Person name={nayok}></Person>)
+      }
+      {/* <Person name={nayoks[0]} nayka="mousumi"></Person>
+      <Person name={nayoks[1]} nayka="purnima"></Person>
+      <Person name={nayoks[2]} nayka="kopila"></Person> */}
     </div>
   );
 }
