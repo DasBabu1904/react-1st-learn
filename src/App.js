@@ -11,31 +11,18 @@ const styleObj = {
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-          <h1>JSX</h1>
-          <div className="container">
-            <h3>Working with react</h3>
-            <p>the number is: {testNum}</p>
-            <h6>Details</h6>
-            <p style={styleObj}>work:{obj.work}<br />
-              Name:{obj.name}
-            </p>
-          </div>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Person></Person>
+      <Person></Person>
+      <Person></Person>
     </div>
   );
+}
+
+function Person() {
+  return (
+    <div className="person"><h1>Sourav Das</h1>
+      <p>I'm a student </p></div>
+  )
 }
 
 export default App;
